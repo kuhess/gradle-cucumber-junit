@@ -12,6 +12,12 @@ Feature: Greetings in various languages
     When I greet "John"
     Then I say "Hello John!"
 
+  @done
+  Scenario: Greetings in english by default
+    Given I speak "klingon"
+    When I greet "John"
+    Then I say "Hello John!"
+
   @todo
   Scenario: Greetings in spanish
     Given I speak "spanish"

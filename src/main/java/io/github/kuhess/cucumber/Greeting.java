@@ -8,13 +8,17 @@ import java.util.Map;
 
 public class Greeting {
 
-    private final static Map<String, String> greetings = ImmutableMap.of(
-            "french", "Bonjour {0} !",
-            "english", "Hello {0}!"
-    );
-    private final String language;
+    enum Language {
+        FRENCH, ENGLISH
+    }
 
-    public Greeting(String language) {
+    private final static Map<Language, String> greetings = ImmutableMap.of(
+            Language.FRENCH, "Bonjour {0} !",
+            Language.ENGLISH, "Hello {0}!"
+    );
+    private final Language language;
+
+    public Greeting(Language language) {
         this.language = language;
     }
 

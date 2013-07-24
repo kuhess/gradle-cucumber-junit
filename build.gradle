@@ -10,7 +10,10 @@ repositories {
 }
 
 dependencies {
+    compile 'javax.inject:javax.inject:1'
+    compile 'org.springframework:spring-context:3.2.3.RELEASE'
     compile 'com.google.guava:guava:14.0'
     testCompile 'info.cukes:cucumber-java:1.1.2'
+    testCompile 'info.cukes:cucumber-spring:1.1.2'
     testCompile 'junit:junit:4.11'
 }
