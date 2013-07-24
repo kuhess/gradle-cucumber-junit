@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.7
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:14.0'
+    testCompile 'info.cukes:cucumber-java:1.1.2'
+    testCompile 'junit:junit:4.11'
+}
