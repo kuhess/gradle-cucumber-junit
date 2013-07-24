@@ -1,6 +1,11 @@
 apply plugin: 'java'
 apply plugin: 'idea'
 
+test {
+    reports.html.enabled = false
+    reports.junitXml.enabled = false
+}
+
 sourceCompatibility = 1.7
 
 version = '1.0'
